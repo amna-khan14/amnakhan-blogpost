@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amna Khan Blog | Beginner Developer Journal</title>
+  <meta
+    name="description"
+    content="A beginner-friendly personal developer blog by Amna Khan."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Amna Khan Blog's Post</a>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Beginner Developer Journal</p>
+          <h1>Hi everyone, this is Amna Khan's blog.</h1>
+          <p class="subtitle">
+            Welcome to my website. I am learning web development step by step and sharing simple
+            practical notes from my journey.
+          </p>
+          <a href="#articles" class="btn btn-primary">Explore Blog Posts</a>
+        </div>
+        <div class="hero-card">
+          <h2>What you will find</h2>
+          <ul>
+            <li>Beginner-friendly coding notes</li>
+            <li>Simple HTML, CSS, and JavaScript examples</li>
+            <li>My personal learning progress</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="container">
+        <label for="searchInput" class="search-label">Search posts</label>
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="Try: first blog, html css, journey..."
+          aria-label="Search posts"
+        />
+      </div>
+    </section>
+
+    <section class="posts-section" id="articles">
+      <div class="container">
+        <div class="section-head">
+          <h2>My Latest Posts</h2>
+          <p>Simple and original posts from my learning journey.</p>
+        </div>
+
+        <div class="post-grid" id="postGrid">
+          <article class="post-card" data-search="first blog first website beginner project">
+            <a href="post1.html" class="post-thumb-link" aria-label="Read My First Blog post">
+              <img
+                class="post-thumb"
+                src="https://picsum.photos/id/48/900/520"
+                alt="Laptop setup for first coding project"
+                loading="lazy"
+              />
+            </a>
+            <div class="post-content">
+              <div class="post-meta-top">
+                <span class="badge">Beginner Project</span>
+                <span>25 Mar 2026</span>
+              </div>
+              <h3>My First Blog</h3>
+              <p>
+                This is my first website project. In this post, I share what I built and what I
+                learned while making my first blog page.
+              </p>
+              <div class="post-meta-bottom">
+                <span>6 min read</span>
+                <a href="post1.html" class="btn btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-search="learning html css basics beginner styling">
+            <a href="post2.html" class="post-thumb-link" aria-label="Read Learning HTML and CSS post">
+              <img
+                class="post-thumb"
+                src="https://picsum.photos/id/180/900/520"
+                alt="Notes and laptop while learning HTML and CSS"
+                loading="lazy"
+              />
+            </a>
+            <div class="post-content">
+              <div class="post-meta-top">
+                <span class="badge">Learning Notes</span>
+                <span>27 Mar 2026</span>
+              </div>
+              <h3>Learning HTML &amp; CSS</h3>
+              <p>
+                I am learning how to design websites with HTML and CSS. This post covers basic
+                structure, styling, and my beginner tips.
+              </p>
+              <div class="post-meta-bottom">
+                <span>7 min read</span>
+                <a href="post2.html" class="btn btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card" data-search="my journey learning web development beginner story">
+            <a href="post3.html" class="post-thumb-link" aria-label="Read My Journey post">
+              <img
+                class="post-thumb"
+                src="https://picsum.photos/id/0/900/520"
+                alt="Developer notebook showing progress and goals"
+                loading="lazy"
+              />
+            </a>
+            <div class="post-content">
+              <div class="post-meta-top">
+                <span class="badge">Personal Journey</span>
+                <span>30 Mar 2026</span>
+              </div>
+              <h3>My Journey</h3>
+              <p>
+                This is just the beginning of my web development journey. I share my goals,
+                challenges, and next learning plan.
+              </p>
+              <div class="post-meta-bottom">
+                <span>6 min read</span>
+                <a href="post3.html" class="btn btn-secondary">Read More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-card">
+        <h2>About Me</h2>
+        <p>
+          Hi, my name is Amna Khan. I am currently learning website development and improving my
+          skills in HTML and CSS. This blog is part of my learning journey.
+        </p>
+        <p>
+          GitHub: <a href="https://github.com/amna25ce" target="_blank" rel="noopener noreferrer">github.com/amna25ce</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="newsletter" id="contact">
+      <div class="container newsletter-wrap">
+        <div>
+          <h2>Contact Me</h2>
+          <p>Email: amnakhan.dev123@gmail.com</p>
+        </div>
+        <form class="subscribe-form" id="subscribeForm">
+          <input type="email" id="emailInput" placeholder="Enter your email" required />
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Amna Khan's Blog</p>
+      <div class="social-links">
+        <a href="https://github.com/amna25ce" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://amnakhan10011.github.io/amnakhan10011/#home" target="_blank" rel="noopener noreferrer" aria-label="Portfolio">Portfolio</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+      <div class="quick-links">
+        <a href="#home">Home</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
